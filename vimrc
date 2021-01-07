@@ -73,6 +73,13 @@ syntax enable
 autocmd InsertLeave * se nocul
 autocmd InsertEnter * se cul
 
+" Persistent undo
+set undofile
+set undodir=$HOME/.vim/undo
+
+set undolevels=1000
+set undoreload=10000
+
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline cursorcolumn
