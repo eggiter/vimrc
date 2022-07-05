@@ -88,6 +88,7 @@ set cursorline cursorcolumn
 " search
 set incsearch
 "set highlight       " conflict with highlight current line
+set hlsearch
 set ignorecase
 set smartcase
 " set nowrapscan
@@ -122,6 +123,7 @@ set expandtab       " expand tab to space
 
 autocmd FileType php    setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
 autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 textwidth=100
+autocmd FileType go     setlocal smarttab tabstop=4 shiftwidth=4 softtabstop=4 textwidth=120
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
